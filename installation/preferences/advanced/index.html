@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.79.0" />
     <meta name="description" content="Make Zotero more useful for us LaTeX holdouts">
 <meta name="author" content="Emiliano Heyns">
 
@@ -688,6 +688,15 @@ Better BibTeX for Zotero
 
     
   </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
 
     <div class="highlightable">
     <ul class="topics">
@@ -702,7 +711,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item
         parent
         
         
@@ -719,7 +728,7 @@ Better BibTeX for Zotero
             
           
           
-          
+
         
           
             
@@ -731,7 +740,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item
         parent
         
         
@@ -746,7 +755,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -835,7 +844,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -865,7 +874,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -879,7 +888,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item
         
         
         
@@ -894,7 +903,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1046,7 +1055,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1060,7 +1069,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item
         
         
         
@@ -1075,7 +1084,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1122,7 +1131,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1136,7 +1145,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item
         
         
         
@@ -1151,7 +1160,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1240,13 +1249,13 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
 
           
-         
+        
     </ul>
 
     
@@ -1255,15 +1264,15 @@ Better BibTeX for Zotero
         <h3>More</h3>
         <ul>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex/releases/latest"><i class='fas fa-fw fa-download'></i> Download</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="/zotero-better-bibtex/sponsoring"><i class='fas fa-fw fa-heart'></i> Sponsorship</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
               </li>
           
@@ -1557,7 +1566,7 @@ With &lsquo;yes, but try to exclude already-sentence-cased titles&rsquo;, BBT wi
 <h4 id="expand-the-string-vars-below-during-imports">Expand the @string vars below during imports</h4>
 <p>default: <code>yes</code></p>
 <p>When enabled, BBT will prepend the @strings section below to all Bib(La)TeX imports and will expand the strings during export.</p>
-<h4 id="if-a-field-could-be-a-string-var-export-it-without-braces">If a field could be a @string var, export it without braces</h4>
+<h4 id="if-a-field-could-be-a-string-reference-export-it-as-an-unbraced-string-reference">If a field could be a @string reference, export it as an unbraced @string reference</h4>
 <p>default: <code>No</code></p>
 <p>When enabled, BBT will try to retain @string vars its exports unsurrounded by braces; when set to &lsquo;detect&rsquo;, single-word strings will be assumed to be externally-defined @string vars,
 when set to &lsquo;match&rsquo;, only @strings declared in the @strings section of the preferences will be preserved. If you don&rsquo;t know what this means, leave it off.</p>
@@ -1565,7 +1574,8 @@ when set to &lsquo;match&rsquo;, only @strings declared in the @strings section 
 <ul>
 <li>No</li>
 <li>Assume single-word fields to be @string vars</li>
-<li>Match against the @string vars below</li>
+<li>Match against the @string declarations below</li>
+<li>Match against the @string declarations and their values below</li>
 </ul>
 <h3 id="citation-keys">Citation keys</h3>
 <h4 id="warn-me-when-changing-citation-keys-in-bulk">Warn me when changing citation keys in bulk</h4>
@@ -1580,7 +1590,7 @@ all your citation keys at once.</p>
 </footer>
 
         
-        </div> 
+        </div>
         
 
       </div>
@@ -1588,8 +1598,8 @@ all your citation keys at once.</p>
     <div id="navigation">
         
         
+
         
-        
             
             
                 
@@ -1642,109 +1652,6 @@ all your citation keys at once.</p>
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1778,21 +1685,6 @@ all your citation keys at once.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1810,21 +1702,8 @@ all your citation keys at once.</p>
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -1836,51 +1715,6 @@ all your citation keys at once.</p>
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -1981,12 +1815,188 @@ all your citation keys at once.</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
             
         
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
         
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
         
 
 
@@ -2002,7 +2012,7 @@ all your citation keys at once.</p>
     </div>
 
     </section>
-    
+
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
@@ -2016,12 +2026,14 @@ all your citation keys at once.</p>
     <script src="/zotero-better-bibtex/js/modernizr.custom-3.6.0.js"></script>
     <script src="/zotero-better-bibtex/js/learn.js"></script>
     <script src="/zotero-better-bibtex/js/hugo-learn.js"></script>
-
-    <link href="/zotero-better-bibtex/mermaid/mermaid.css" rel="stylesheet" />
-    <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true });
-    </script>
+    
+        
+            <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
     
 
   </body>

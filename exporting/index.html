@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.79.0" />
     <meta name="description" content="Make Zotero more useful for us LaTeX holdouts">
 <meta name="author" content="Emiliano Heyns">
 
@@ -684,6 +684,15 @@ Better BibTeX for Zotero
 
     
   </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
 
     <div class="highlightable">
     <ul class="topics">
@@ -698,7 +707,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item
         
         
         
@@ -715,7 +724,7 @@ Better BibTeX for Zotero
             
           
           
-          
+
         
           
             
@@ -727,7 +736,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item
         
         
         
@@ -742,7 +751,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -831,7 +840,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -861,7 +870,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -875,7 +884,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item
         parent
         active
         
@@ -890,7 +899,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1042,7 +1051,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1056,7 +1065,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item
         
         
         
@@ -1071,7 +1080,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1118,7 +1127,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1132,7 +1141,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item
         
         
         
@@ -1147,7 +1156,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1236,13 +1245,13 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
 
           
-         
+        
     </ul>
 
     
@@ -1251,15 +1260,15 @@ Better BibTeX for Zotero
         <h3>More</h3>
         <ul>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex/releases/latest"><i class='fas fa-fw fa-download'></i> Download</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="/zotero-better-bibtex/sponsoring"><i class='fas fa-fw fa-heart'></i> Sponsorship</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
               </li>
           
@@ -1445,7 +1454,7 @@ Better BibTeX for Zotero
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#pinning-fixating-the-citation-key">Pinning (fixating) the citation key</a></li>
+    <li><a href="#pinning-fixing-the-citation-key">Pinning (fixing) the citation key</a></li>
     <li><a href="#add-your-own-biblatex-fields">Add your own BibLaTeX fields</a>
       <ul>
         <li><a href="#latex-fields">LaTeX fields</a></li>
@@ -1495,9 +1504,9 @@ The Better BibTeX <a href="/zotero-better-bibtex/installation/preferences/">conf
 <li>And really a <a href="/zotero-better-bibtex/installation/preferences/">ton more</a>.</li>
 </ul>
 <p>Additionally you can automate exporting (parts of) your library either using <a href="/zotero-better-bibtex/exporting/auto/">auto-export</a> or <a href="/zotero-better-bibtex/exporting/pull/">pull export</a>.</p>
-<h2 id="pinning-fixating-the-citation-key">Pinning (fixating) the citation key</h2>
+<h2 id="pinning-fixing-the-citation-key">Pinning (fixing) the citation key</h2>
 <p>By default, BBT will generate citation keys from your items using the <a href="/zotero-better-bibtex/citing/">formatting pattern</a> you specified. If you want the key to be stable even when you change the item,
-you can fixate its citation key to a value of your choosing by adding the text <code>Citation Key: [your citekey]</code> on a line of its own in the <code>extra</code> field of the item.</p>
+you can fix its citation key to a value of your choosing by adding the text <code>Citation Key: [your citekey]</code> on a line of its own in the <code>extra</code> field of the item.</p>
 <h2 id="add-your-own-biblatex-fields">Add your own BibLaTeX fields</h2>
 <h3 id="latex-fields">LaTeX fields</h3>
 <p>You can add your own fields to the export which are not derived from regular Zotero item fields by adding them in the <code>extra</code> field:</p>
@@ -1538,7 +1547,7 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
 </footer>
 
         
-        </div> 
+        </div>
         
 
       </div>
@@ -1546,8 +1555,8 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
     <div id="navigation">
         
         
+
         
-        
             
             
                 
@@ -1593,22 +1602,6 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1658,9 +1651,6 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
             
         
                     
-            
-        
-                    
                         
             
             
@@ -1685,23 +1675,6 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1713,10 +1686,30 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
             
         
                     
+            
+        
+                    
                         
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1809,38 +1802,6 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -1905,6 +1866,54 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1942,7 +1951,7 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
                     
             
         
-        
+
         
 
 
@@ -1958,7 +1967,7 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
     </div>
 
     </section>
-    
+
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
@@ -1972,12 +1981,14 @@ I consider it experimental at this stage. If you are experiencing errors,</p>
     <script src="/zotero-better-bibtex/js/modernizr.custom-3.6.0.js"></script>
     <script src="/zotero-better-bibtex/js/learn.js"></script>
     <script src="/zotero-better-bibtex/js/hugo-learn.js"></script>
-
-    <link href="/zotero-better-bibtex/mermaid/mermaid.css" rel="stylesheet" />
-    <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true });
-    </script>
+    
+        
+            <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
     
 
   </body>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.79.0" />
     <meta name="description" content="Make Zotero more useful for us LaTeX holdouts">
 <meta name="author" content="Emiliano Heyns">
 
@@ -684,6 +684,15 @@ Better BibTeX for Zotero
 
     
   </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
 
     <div class="highlightable">
     <ul class="topics">
@@ -698,7 +707,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item
         
         
         
@@ -715,7 +724,7 @@ Better BibTeX for Zotero
             
           
           
-          
+
         
           
             
@@ -727,7 +736,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item
         
         
         
@@ -742,7 +751,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -831,7 +840,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -861,7 +870,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -875,7 +884,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item
         parent
         
         
@@ -890,7 +899,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1042,7 +1051,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1056,7 +1065,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item
         
         
         
@@ -1071,7 +1080,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1118,7 +1127,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1132,7 +1141,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item
         
         
         
@@ -1147,7 +1156,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1236,13 +1245,13 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
 
           
-         
+        
     </ul>
 
     
@@ -1251,15 +1260,15 @@ Better BibTeX for Zotero
         <h3>More</h3>
         <ul>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex/releases/latest"><i class='fas fa-fw fa-download'></i> Download</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="/zotero-better-bibtex/sponsoring"><i class='fas fa-fw fa-heart'></i> Sponsorship</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
               </li>
           
@@ -1479,8 +1488,8 @@ Better BibTeX for Zotero
 
 <p>In addition to LaTeX, BBT plays very well with pandoc:</p>
 <ul>
-<li>you can <a href="/installation/preferences/citation-keys/#quick-copydrag-and-drop-citations">drag and drop</a> citations from Zotero into your markdown documents.</li>
-<li>you can <a href="/citing/cayw">cite as you write</a> in your favorite editor with varying levels of comfort, mostly depending on how easy (VSCode, Sublime) or hard (looking at you Scrivener) it is to extend your editor.</li>
+<li>you can <a href="/zotero-better-bibtex/installation/preferences/citation-keys/#quick-copydrag-and-drop-citations">drag and drop</a> citations from Zotero into your markdown documents.</li>
+<li>you can <a href="/zotero-better-bibtex/citing/cayw/">cite as you write</a> in your favorite editor with varying levels of comfort, mostly depending on how easy (VSCode, Sublime) or hard (looking at you Scrivener) it is to extend your editor.</li>
 <li>you can even convert your markdown document into a LibreOffice/Word document with actual live Zotero references as if you had entered them into Zotero all along (see below)</li>
 </ul>
 <h2 id="use-csl-not-bibtex-with-pandoc">Use CSL, not bibtex with pandoc</h2>
@@ -1531,12 +1540,12 @@ and this unspoken difference can be another cause of loss.</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
 <span style="color:#75715e"># all the regular stuff you have here</span>
-<span style="color:#66d9ef">zotero</span>:
-  <span style="color:#66d9ef">library</span>: &lt;group name&gt; <span style="color:#75715e"># omitted to use your personal library</span>
-  <span style="color:#66d9ef">scannable-cite</span>: <span style="color:#66d9ef">false</span> <span style="color:#75715e"># only relevant when your compiling to scannable-cite .odt</span>
-  <span style="color:#66d9ef">client</span>: &lt;zotero or jurism&gt; <span style="color:#75715e"># defaults to zotero</span>
-  <span style="color:#66d9ef">author-in-text</span>: <span style="color:#66d9ef">false</span> <span style="color:#75715e"># when true, enabled fake author-name-only cites by replacing it with the text of the last names of the authors</span>
-  <span style="color:#66d9ef">csl-style</span>: apa <span style="color:#75715e"># pre-fill the style</span>
+<span style="color:#f92672">zotero</span>:
+  <span style="color:#f92672">library</span>: <span style="color:#ae81ff">&lt;group name&gt;</span> <span style="color:#75715e"># omitted to use your personal library</span>
+  <span style="color:#f92672">scannable-cite</span>: <span style="color:#66d9ef">false</span> <span style="color:#75715e"># only relevant when your compiling to scannable-cite .odt</span>
+  <span style="color:#f92672">client</span>: <span style="color:#ae81ff">&lt;zotero or jurism&gt;</span> <span style="color:#75715e"># defaults to zotero</span>
+  <span style="color:#f92672">author-in-text</span>: <span style="color:#66d9ef">false</span> <span style="color:#75715e"># when true, enabled fake author-name-only cites by replacing it with the text of the last names of the authors</span>
+  <span style="color:#f92672">csl-style</span>: <span style="color:#ae81ff">apa</span> <span style="color:#75715e"># pre-fill the style</span>
 ...
 </code></pre></div><p>or you can specify them on the pandoc command line:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pandoc -s --lua-filter<span style="color:#f92672">=</span>zotero.lua --metadata<span style="color:#f92672">=</span>zotero_scannable_cite:true --metadata<span style="color:#f92672">=</span>client:jurism ...
@@ -1555,7 +1564,7 @@ any changes fixes it ¯\_(ツ)_/¯</p>
 </footer>
 
         
-        </div> 
+        </div>
         
 
       </div>
@@ -1563,8 +1572,8 @@ any changes fixes it ¯\_(ツ)_/¯</p>
     <div id="navigation">
         
         
+
         
-        
             
             
                 
@@ -1610,161 +1619,6 @@ any changes fixes it ¯\_(ツ)_/¯</p>
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1846,6 +1700,113 @@ any changes fixes it ¯\_(ツ)_/¯</p>
                     
 
                     
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1926,6 +1887,54 @@ any changes fixes it ¯\_(ツ)_/¯</p>
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1963,7 +1972,7 @@ any changes fixes it ¯\_(ツ)_/¯</p>
                     
             
         
-        
+
         
 
 
@@ -1979,7 +1988,7 @@ any changes fixes it ¯\_(ツ)_/¯</p>
     </div>
 
     </section>
-    
+
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
@@ -1993,12 +2002,14 @@ any changes fixes it ¯\_(ツ)_/¯</p>
     <script src="/zotero-better-bibtex/js/modernizr.custom-3.6.0.js"></script>
     <script src="/zotero-better-bibtex/js/learn.js"></script>
     <script src="/zotero-better-bibtex/js/hugo-learn.js"></script>
-
-    <link href="/zotero-better-bibtex/mermaid/mermaid.css" rel="stylesheet" />
-    <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true });
-    </script>
+    
+        
+            <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
     
 
   </body>

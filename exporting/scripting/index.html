@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.79.0" />
     <meta name="description" content="Make Zotero more useful for us LaTeX holdouts">
 <meta name="author" content="Emiliano Heyns">
 
@@ -684,6 +684,15 @@ Better BibTeX for Zotero
 
     
   </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
 
     <div class="highlightable">
     <ul class="topics">
@@ -698,7 +707,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item
         
         
         
@@ -715,7 +724,7 @@ Better BibTeX for Zotero
             
           
           
-          
+
         
           
             
@@ -727,7 +736,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item
         
         
         
@@ -742,7 +751,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -831,7 +840,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -861,7 +870,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -875,7 +884,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item
         parent
         
         
@@ -890,7 +899,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1042,7 +1051,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1056,7 +1065,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item
         
         
         
@@ -1071,7 +1080,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1118,7 +1127,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1132,7 +1141,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item
         
         
         
@@ -1147,7 +1156,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1236,13 +1245,13 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
 
           
-         
+        
     </ul>
 
     
@@ -1251,15 +1260,15 @@ Better BibTeX for Zotero
         <h3>More</h3>
         <ul>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex/releases/latest"><i class='fas fa-fw fa-download'></i> Download</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="/zotero-better-bibtex/sponsoring"><i class='fas fa-fw fa-heart'></i> Sponsorship</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
               </li>
           
@@ -1467,6 +1476,7 @@ Better BibTeX for Zotero
         <li><a href="#detect-and-protect-mathjax">Detect and protect MathJax</a></li>
         <li><a href="#replace-director-with-author-for-videorecording-and-film-references">Replace <code>director</code> with <code>author</code> for <code>videoRecording</code> and <code>film</code> references</a></li>
         <li><a href="#changing-the-reference-type-from-collection-to-book">Changing the reference type from collection to book</a></li>
+        <li><a href="#set-the-reference-type-to-misc-for-arxiv-preprints-in-bibtex">Set the reference type to <code>misc</code> for arXiv preprints in BibTeX</a></li>
       </ul>
     </li>
   </ul>
@@ -1617,7 +1627,7 @@ the Zotero item looks like to the translator.</p>
 }
 </code></pre></div><h3 id="add-arxiv-data">Add arXiv data</h3>
 <p>arXiv is a bit of an odd duck. It really isn&rsquo;t a journal, so it shouldn&rsquo;t be the journal title, and their own recommendations on how to include arXiv IDs is a little lacking: <a href="https://arxiv.org/help/faq/references">this</a> doesn&rsquo;t say where to include the <code>arXiv:...</code> identfier, and <a href="https://arxiv.org/help/hypertex/bibstyles">this</a> says <em>not</em> to include it. Nor does it give any recommendations on how to achieve the <a href="https://arxiv.org/help/faq/references">desired output</a>.</p>
-<p>But for arguments&rsquo; sake, let&rsquo;s say you get the desired output by including an empty <code>journaltitle</code> field (ugh) and stuff the <code>arXiv:...</code> ID in the <code>pages</code> field (<em>ugh</em>). You could do that with the following postscript:</p>
+<p>But for arguments' sake, let&rsquo;s say you get the desired output by including an empty <code>journaltitle</code> field (ugh) and stuff the <code>arXiv:...</code> ID in the <code>pages</code> field (<em>ugh</em>). You could do that with the following postscript:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Translator</span>.<span style="color:#a6e22e">BetterTeX</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">arXiv</span>.<span style="color:#a6e22e">id</span>) {
   <span style="color:#a6e22e">reference</span>.<span style="color:#a6e22e">add</span>({ <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;pages&#39;</span>, <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">arXiv</span>.<span style="color:#a6e22e">id</span> });
   <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">reference</span>.<span style="color:#a6e22e">has</span>.<span style="color:#a6e22e">journaltitle</span>) { <span style="color:#a6e22e">reference</span>.<span style="color:#a6e22e">add</span>({ <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;journaltitle&#39;</span>, <span style="color:#a6e22e">bibtex</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;{}&#39;</span> }); }
@@ -1678,14 +1688,21 @@ the Zotero item looks like to the translator.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">Translator</span>.<span style="color:#a6e22e">BetterBibLaTeX</span>) {
   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">reference</span>.<span style="color:#a6e22e">referencetype</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;collection&#39;</span>) <span style="color:#a6e22e">reference</span>.<span style="color:#a6e22e">referencetype</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;book&#39;</span>
 }
-</code></pre></div>
+</code></pre></div><h3 id="set-the-reference-type-to-misc-for-arxiv-preprints-in-bibtex">Set the reference type to <code>misc</code> for arXiv preprints in BibTeX</h3>
+<pre><code>if (Translator.BetterBibTeX &amp;&amp; reference.referencetype === 'article' &amp;&amp; item.arXiv) {
+  if (reference.has.journal &amp;&amp; item.arXiv.source === 'publicationTitle') {
+    reference.remove('journal');
+  }
+  if (!reference.has.journal) reference.referencetype = 'misc'
+}
+</code></pre>
 
 <footer class="footline">
 	
 </footer>
 
         
-        </div> 
+        </div>
         
 
       </div>
@@ -1693,8 +1710,8 @@ the Zotero item looks like to the translator.</p>
     <div id="navigation">
         
         
+
         
-        
             
             
                 
@@ -1727,289 +1744,6 @@ the Zotero item looks like to the translator.</p>
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
                     
                         
             
@@ -2091,9 +1825,292 @@ the Zotero item looks like to the translator.</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
+                    
+            
         
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
         
 
 
@@ -2109,7 +2126,7 @@ the Zotero item looks like to the translator.</p>
     </div>
 
     </section>
-    
+
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
@@ -2123,12 +2140,14 @@ the Zotero item looks like to the translator.</p>
     <script src="/zotero-better-bibtex/js/modernizr.custom-3.6.0.js"></script>
     <script src="/zotero-better-bibtex/js/learn.js"></script>
     <script src="/zotero-better-bibtex/js/hugo-learn.js"></script>
-
-    <link href="/zotero-better-bibtex/mermaid/mermaid.css" rel="stylesheet" />
-    <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true });
-    </script>
+    
+        
+            <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
     
 
   </body>

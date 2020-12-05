@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.79.0" />
     <meta name="description" content="Make Zotero more useful for us LaTeX holdouts">
 <meta name="author" content="Emiliano Heyns">
 
@@ -684,6 +684,15 @@ Better BibTeX for Zotero
 
     
   </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
 
     <div class="highlightable">
     <ul class="topics">
@@ -698,7 +707,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item
         
         
         
@@ -715,7 +724,7 @@ Better BibTeX for Zotero
             
           
           
-          
+
         
           
             
@@ -727,7 +736,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item
         
         
         
@@ -742,7 +751,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -831,7 +840,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -861,7 +870,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -875,7 +884,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item
         parent
         
         
@@ -890,7 +899,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1042,7 +1051,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1056,7 +1065,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item
         
         
         
@@ -1071,7 +1080,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1118,7 +1127,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1132,7 +1141,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item
         
         
         
@@ -1147,7 +1156,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1236,13 +1245,13 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
 
           
-         
+        
     </ul>
 
     
@@ -1251,15 +1260,15 @@ Better BibTeX for Zotero
         <h3>More</h3>
         <ul>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex/releases/latest"><i class='fas fa-fw fa-download'></i> Download</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="/zotero-better-bibtex/sponsoring"><i class='fas fa-fw fa-heart'></i> Sponsorship</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
               </li>
           
@@ -1489,7 +1498,7 @@ of its own.</p>
 </code></pre></div><p>or the older format you migh have seen, which is supported but considered depracated:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{:csl-variable: value}
 </code></pre></div><p>The full list of labels and the Zotero/CSL variables they translate to can be found in the table at the end.</p>
-<p>These extra-fields are available to <a href="scripting">postscripts</a> as <code>item.extraField.kv.&lt;variable-name&gt;</code>. Which variable it is depends (sorry):</p>
+<p>These extra-fields are available to <a href="/zotero-better-bibtex/exporting/scripting/">postscripts</a> as <code>item.extraField.kv.&lt;variable-name&gt;</code>. Which variable it is depends (sorry):</p>
 <ul>
 <li>when you export to CSL, it is attempted to map it to the corrsponding CSL fields; if none are available, it is available under their <em>zotero</em> name</li>
 <li>when you export to Better BibTeX/Better BibLaTeX, it is attempted to map it to the corresponding zotero fields; if none are available, it is available under their <em>csl variable</em> name</li>
@@ -1553,6 +1562,12 @@ tex.formula: $\sum\limits_{i=1}^{n} -p(m_{i})\log_{2}(p(m_{i}))$
 <td></td>
 </tr>
 <tr>
+<td><strong>archive collection</strong></td>
+<td>text</td>
+<td>archiveCollection¹</td>
+<td>archive_collection¹</td>
+</tr>
+<tr>
 <td><strong>archive location</strong></td>
 <td>text</td>
 <td>archiveLocation</td>
@@ -1611,6 +1626,12 @@ tex.formula: $\sum\limits_{i=1}^{n} -p(m_{i})\log_{2}(p(m_{i}))$
 <td>text</td>
 <td>publicationTitle</td>
 <td></td>
+</tr>
+<tr>
+<td><strong>book abbreviation</strong></td>
+<td>text</td>
+<td>journalAbbreviation</td>
+<td>container-title-short</td>
 </tr>
 <tr>
 <td><strong>book author</strong></td>
@@ -2222,7 +2243,7 @@ tex.formula: $\sum\limits_{i=1}^{n} -p(m_{i})\log_{2}(p(m_{i}))$
 </footer>
 
         
-        </div> 
+        </div>
         
 
       </div>
@@ -2230,8 +2251,8 @@ tex.formula: $\sum\limits_{i=1}^{n} -p(m_{i})\log_{2}(p(m_{i}))$
     <div id="navigation">
         
         
+
         
-        
             
             
                 
@@ -2264,289 +2285,6 @@ tex.formula: $\sum\limits_{i=1}^{n} -p(m_{i})\log_{2}(p(m_{i}))$
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
                     
                         
             
@@ -2628,9 +2366,292 @@ tex.formula: $\sum\limits_{i=1}^{n} -p(m_{i})\log_{2}(p(m_{i}))$
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
+                    
+            
         
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
         
 
 
@@ -2646,7 +2667,7 @@ tex.formula: $\sum\limits_{i=1}^{n} -p(m_{i})\log_{2}(p(m_{i}))$
     </div>
 
     </section>
-    
+
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
@@ -2660,12 +2681,14 @@ tex.formula: $\sum\limits_{i=1}^{n} -p(m_{i})\log_{2}(p(m_{i}))$
     <script src="/zotero-better-bibtex/js/modernizr.custom-3.6.0.js"></script>
     <script src="/zotero-better-bibtex/js/learn.js"></script>
     <script src="/zotero-better-bibtex/js/hugo-learn.js"></script>
-
-    <link href="/zotero-better-bibtex/mermaid/mermaid.css" rel="stylesheet" />
-    <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true });
-    </script>
+    
+        
+            <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
     
 
   </body>

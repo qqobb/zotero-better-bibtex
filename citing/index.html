@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.79.0" />
     <meta name="description" content="Make Zotero more useful for us LaTeX holdouts">
 <meta name="author" content="Emiliano Heyns">
 
@@ -684,6 +684,15 @@ Better BibTeX for Zotero
 
     
   </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
 
     <div class="highlightable">
     <ul class="topics">
@@ -698,7 +707,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item
         
         
         
@@ -715,7 +724,7 @@ Better BibTeX for Zotero
             
           
           
-          
+
         
           
             
@@ -727,7 +736,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item
         
         
         
@@ -742,7 +751,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -831,7 +840,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -861,7 +870,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -875,7 +884,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item
         
         
         
@@ -890,7 +899,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1042,7 +1051,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1056,7 +1065,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item
         parent
         active
         
@@ -1071,7 +1080,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1118,7 +1127,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1132,7 +1141,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item
         
         
         
@@ -1147,7 +1156,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1236,13 +1245,13 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
 
           
-         
+        
     </ul>
 
     
@@ -1251,15 +1260,15 @@ Better BibTeX for Zotero
         <h3>More</h3>
         <ul>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex/releases/latest"><i class='fas fa-fw fa-download'></i> Download</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="/zotero-better-bibtex/sponsoring"><i class='fas fa-fw fa-heart'></i> Sponsorship</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
               </li>
           
@@ -1446,7 +1455,7 @@ Better BibTeX for Zotero
 <nav id="TableOfContents">
   <ul>
     <li><a href="#generating-citekeys-for-your-references">Generating citekeys for your references</a></li>
-    <li><a href="#set-your-own-fixated-citation-keys">Set your own, fixated citation keys</a></li>
+    <li><a href="#set-your-own-fixed-citation-keys">Set your own, fixed citation keys</a></li>
     <li><a href="#drag-and-drophotkey-citations">Drag and drop/hotkey citations</a></li>
     <li><a href="#find-duplicate-keys-through-integration-with-report-customizerhttpsgithubcomretorquerezotero-report-customizer">Find duplicate keys through integration with <a href="https://github.com/retorquere/zotero-report-customizer">Report Customizer</a></a></li>
     <li><a href="#configurable-citekey-generator">Configurable citekey generator</a>
@@ -1499,7 +1508,7 @@ people usually pick a naming scheme related to them. As the citation key is <em>
 bibliography, this is a piece of data you want to have control over. BBT offers you this control:</p>
 <ul>
 <li>Stable citation keys, without key clashes. BBT generates citation keys that take into account other existing keys in your library in a deterministic way, regardless of what part of your library you export, or the order in which you do it.</li>
-<li>BBT is conservative about citation key changes, and allows you to fixate keys to any value of your choosing.</li>
+<li>BBT is conservative about citation key changes, and allows you to fix keys to any value of your choosing.</li>
 <li>Generate citation keys from JabRef(-ish) patterns.</li>
 </ul>
 <p>You can also</p>
@@ -1507,9 +1516,9 @@ bibliography, this is a piece of data you want to have control over. BBT offers 
 <li>Drag and drop LaTeX citations using these keys to your favorite LaTeX editor</li>
 <li>Show your citation keys in the reference list view.</li>
 </ul>
-<h2 id="set-your-own-fixated-citation-keys">Set your own, fixated citation keys</h2>
+<h2 id="set-your-own-fixed-citation-keys">Set your own, fixed citation keys</h2>
 <p>By default, BBT generates the citation key from the item information, and this key may change when you edit the item. Such keys are called <code>dynamic</code> keys, which are marked with an asterisk (<code>*</code>) in the reference list view, and are displayed in italics in the item details.</p>
-<p>You can fixate the citation key (called <code>pinning</code> in BBT) for an item by adding the text <code>Citation Key: [your citekey]</code> anywhere in the
+<p>You can fix the citation key (called <code>pinning</code> in BBT) for an item by adding the text <code>Citation Key: [your citekey]</code> anywhere in the
 <code>extra</code> field of the reference on a line of its own. You can generate a pinned citation key by selecting one or more items, right-clicking, and selecting <code>Generate BibTeX key</code>, which will add the current citation key to the <code>extra</code> field, thereby pinning it. These keys are shown without the asterisk (<code>*</code>) marker in the middle column, and non-italicized in the details view, to distinguish them from dynamic keys.</p>
 <h2 id="drag-and-drophotkey-citations">Drag and drop/hotkey citations</h2>
 <p>You can drag and drop citations into your LaTeX/Markdown/Orgmode editor, and it will add a proper <code>\cite{citekey}</code>/<code>[@citekey]</code>/<code>[[zotero://select...][@citekey]</code>. The <code>cite</code> command is
@@ -1560,7 +1569,7 @@ More than four authors: First letters of last names of first three authors conca
   
     <li><code>authorsN</code> / <code>editorsN</code>, <code>+initials</code>, <code>+&lt;joinchar&gt;</code>: The last name of up to N authors. If there are more authors, &ldquo;EtAl&rdquo; is appended.</li>
   
-    <li><code>authshort</code> / <code>edtrshort</code>, <code>+initials</code>, <code>+&lt;joinchar&gt;</code>: The last name if one author is given; the first character of up to three authors&rsquo; last names if more than one author is given. A plus character is added, if there are more than three authors.</li>
+    <li><code>authshort</code> / <code>edtrshort</code>, <code>+initials</code>, <code>+&lt;joinchar&gt;</code>: The last name if one author is given; the first character of up to three authors' last names if more than one author is given. A plus character is added, if there are more than three authors.</li>
   
     <li><code>date</code>: The date of the publication</li>
   
@@ -1601,7 +1610,7 @@ it will use the same abbreviation filter Zotero uses in the wordprocessor integr
   </li>
   <li><code>0</code>: an alias for <code>[postfix=-%(n)s]</code>. Emulates the disambiguator of the standard Zotero exports. When you use <code>[zotero]</code> in your pattern, <code>[zotero][0]</code> is implied</li>
   <li><code>&gt;X</code>: a pseudo-function which aborts the current pattern generation if what came before it is <code>X</code> characters or less (<code>[&gt;0]</code> is a typical use. You would typically use this with something like <code>[auth][&gt;0][year] | [title][year]</code> which means if there's no author you get <code>title-year</code> rather than just <code>year</code>.</li>
-  <li><code>=typeName</code>: a pseudo-function that aborts the current pattern generation if the Zotero reference type does not equal <code>typeName</code>. You can test for multiple typenames at once by separating them with slashes (<code>[=journalArticle/report]</code>). Valid typeNames are: , <code>artwork</code><code>attachment</code><code>audioRecording</code><code>bill</code><code>blogPost</code><code>book</code><code>bookSection</code><code>case</code><code>classic**</code><code>computerProgram</code><code>conferencePaper</code><code>dictionaryEntry</code><code>document</code><code>email</code><code>encyclopediaArticle</code><code>film</code><code>forumPost</code><code>gazette**</code><code>hearing</code><code>instantMessage</code><code>interview</code><code>journalArticle</code><code>letter</code><code>magazineArticle</code><code>manuscript</code><code>map</code><code>newspaperArticle</code><code>note</code><code>patent</code><code>podcast</code><code>presentation</code><code>radioBroadcast</code><code>regulation**</code><code>report</code><code>standard**</code><code>statute</code><code>thesis</code><code>treaty**</code><code>tvBroadcast</code><code>videoRecording</code><code>webpage</code>.</li>
+  <li><code>=typeName</code>: a pseudo-function that aborts the current pattern generation if the Zotero reference type does not equal <code>typeName</code>. You can test for multiple typenames at once by separating them with slashes (<code>[=journalArticle/report]</code>). Valid typeNames are: , <code>artwork</code><code>attachment</code><code>audioRecording</code><code>bill</code><code>blogPost</code><code>book</code><code>bookSection</code><code>case</code><code>classic**</code><code>computerProgram</code><code>conferencePaper</code><code>dictionaryEntry</code><code>document</code><code>email</code><code>encyclopediaArticle</code><code>film</code><code>forumPost</code><code>gazette**</code><code>hearing</code><code>instantMessage</code><code>interview</code><code>journalArticle</code><code>legalCommentary**</code><code>letter</code><code>magazineArticle</code><code>manuscript</code><code>map</code><code>newspaperArticle</code><code>note</code><code>patent</code><code>podcast</code><code>presentation</code><code>radioBroadcast</code><code>regulation**</code><code>report</code><code>standard**</code><code>statute</code><code>thesis</code><code>treaty**</code><code>tvBroadcast</code><code>videoRecording</code><code>webpage</code>.</li>
 </ul>
 
 <p><strong>Note</strong>: the functions above all have the <code>clean</code> filter (see below) automatically applied to them. If you want more control, <code>auth</code>, <code>authIni</code>, <code>edtr</code>, &hellip; and all the author-related fields that mimic the JabRef equivalents also have capitalized versions (so <code>Auth</code>, <code>AuthIni</code>, <code>Edtr</code>, &hellip;) which follow the same algorithm but do not have any cleaning (diacritic folding, space removal, stripping of invalid citekey characters) applied. These can be used to pass through the filters specified below much like the fields from the table above. See also &ldquo;usage note&rdquo; below. For all the non-author fields, you can use the unprocessed reference fields directly:</p>
@@ -1628,11 +1637,13 @@ it will use the same abbreviation filter Zotero uses in the wordprocessor integr
       
         <td>Archive</td>
       
-        <td>ArchiveLocation</td>
+        <td>ArchiveCollection**</td>
       
     </tr>
   
     <tr>
+      
+        <td>ArchiveLocation</td>
       
         <td>ArtworkMedium</td>
       
@@ -1640,11 +1651,11 @@ it will use the same abbreviation filter Zotero uses in the wordprocessor integr
       
         <td>AssemblyNumber**</td>
       
-        <td>Assignee</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Assignee</td>
       
         <td>AudioFileType</td>
       
@@ -1652,73 +1663,81 @@ it will use the same abbreviation filter Zotero uses in the wordprocessor integr
       
         <td>BillNumber</td>
       
-        <td>BlogTitle</td>
-      
     </tr>
   
     <tr>
+      
+        <td>BlogTitle</td>
+      
+        <td>BookAbbreviation**</td>
       
         <td>BookTitle</td>
       
         <td>CallNumber</td>
       
-        <td>CaseName</td>
-      
-        <td>Code</td>
-      
     </tr>
   
     <tr>
+      
+        <td>CaseName</td>
+      
+        <td>Code</td>
       
         <td>CodeNumber</td>
       
         <td>CodePages</td>
       
-        <td>CodeVolume</td>
-      
-        <td>Committee</td>
-      
     </tr>
   
     <tr>
+      
+        <td>CodeVolume</td>
+      
+        <td>Committee</td>
       
         <td>Company</td>
       
         <td>ConferenceDate**</td>
       
-        <td>ConferenceName</td>
-      
-        <td>Country</td>
-      
     </tr>
   
     <tr>
+      
+        <td>ConferenceName</td>
+      
+        <td>Country</td>
       
         <td>Court</td>
       
         <td>DOI</td>
       
-        <td>Date</td>
-      
-        <td>DateAmended**</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Date</td>
+      
+        <td>DateAmended**</td>
       
         <td>DateDecided</td>
       
         <td>DateEnacted</td>
       
-        <td>DictionaryTitle</td>
-      
-        <td>Distributor</td>
-      
     </tr>
   
     <tr>
       
+        <td>DictionaryTitle</td>
+      
+        <td>Distributor</td>
+      
+        <td>Division**</td>
+      
         <td>DocketNumber</td>
+      
+    </tr>
+  
+    <tr>
       
         <td>DocumentName**</td>
       
@@ -1726,291 +1745,293 @@ it will use the same abbreviation filter Zotero uses in the wordprocessor integr
       
         <td>Edition</td>
       
+        <td>EncyclopediaTitle</td>
+      
     </tr>
   
     <tr>
-      
-        <td>EncyclopediaTitle</td>
       
         <td>EpisodeNumber</td>
       
-        <td>Extra</td>
-      
         <td>FilingDate</td>
-      
-    </tr>
-  
-    <tr>
       
         <td>FirstPage</td>
       
         <td>ForumTitle</td>
       
-        <td>GazetteFlag**</td>
-      
-        <td>Genre</td>
-      
     </tr>
   
     <tr>
+      
+        <td>GazetteFlag**</td>
+      
+        <td>Genre</td>
       
         <td>History</td>
       
         <td>ISBN</td>
       
-        <td>ISSN</td>
-      
-        <td>Institution</td>
-      
     </tr>
   
     <tr>
+      
+        <td>ISSN</td>
+      
+        <td>Institution</td>
       
         <td>InterviewMedium</td>
       
         <td>Issue</td>
       
-        <td>IssueDate</td>
-      
-        <td>IssuingAuthority</td>
-      
     </tr>
   
     <tr>
+      
+        <td>IssueDate</td>
+      
+        <td>IssuingAuthority</td>
       
         <td>JournalAbbreviation</td>
       
         <td>Jurisdiction**</td>
       
-        <td>Label</td>
-      
-        <td>Language</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Label</td>
+      
+        <td>Language</td>
       
         <td>LegalStatus</td>
       
         <td>LegislativeBody</td>
       
-        <td>LetterType</td>
-      
-        <td>LibraryCatalog</td>
-      
     </tr>
   
     <tr>
+      
+        <td>LetterType</td>
+      
+        <td>LibraryCatalog</td>
       
         <td>ManuscriptType</td>
       
         <td>MapType</td>
       
-        <td>Medium</td>
-      
-        <td>MeetingName</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Medium</td>
+      
+        <td>MeetingName</td>
       
         <td>MeetingNumber**</td>
       
         <td>NameOfAct</td>
       
-        <td>Network</td>
-      
-        <td>NewsCaseDate**</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Network</td>
+      
+        <td>NewsCaseDate**</td>
       
         <td>NumPages</td>
       
         <td>Number</td>
       
-        <td>NumberOfVolumes</td>
-      
-        <td>OpeningDate**</td>
-      
     </tr>
   
     <tr>
+      
+        <td>NumberOfVolumes</td>
+      
+        <td>OpeningDate**</td>
       
         <td>Opus**</td>
       
         <td>OriginalDate**</td>
       
-        <td>Pages</td>
-      
-        <td>ParentTreaty**</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Pages</td>
+      
+        <td>ParentTreaty**</td>
       
         <td>PatentNumber</td>
       
         <td>Place</td>
       
-        <td>PostType</td>
-      
-        <td>PresentationType</td>
-      
     </tr>
   
     <tr>
+      
+        <td>PostType</td>
+      
+        <td>PresentationType</td>
       
         <td>PriorityDate**</td>
       
         <td>PriorityNumbers</td>
       
-        <td>ProceedingsTitle</td>
-      
-        <td>ProgramTitle</td>
-      
     </tr>
   
     <tr>
+      
+        <td>ProceedingsTitle</td>
+      
+        <td>ProgramTitle</td>
       
         <td>ProgrammingLanguage</td>
       
         <td>PublicLawNumber</td>
       
-        <td>PublicationDate**</td>
-      
-        <td>PublicationNumber**</td>
-      
     </tr>
   
     <tr>
+      
+        <td>PublicationDate**</td>
+      
+        <td>PublicationNumber**</td>
       
         <td>PublicationTitle</td>
       
         <td>Publisher</td>
       
-        <td>References</td>
-      
-        <td>RegnalYear**</td>
-      
     </tr>
   
     <tr>
+      
+        <td>References</td>
+      
+        <td>RegnalYear**</td>
       
         <td>RegulationType**</td>
       
         <td>RegulatoryBody**</td>
       
-        <td>Reign**</td>
-      
-        <td>Release**</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Reign**</td>
+      
+        <td>Release**</td>
       
         <td>ReportNumber</td>
       
         <td>ReportType</td>
       
-        <td>Reporter</td>
-      
-        <td>ReporterVolume</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Reporter</td>
+      
+        <td>ReporterVolume</td>
       
         <td>ResolutionLabel**</td>
       
         <td>Rights</td>
       
-        <td>RunningTime</td>
-      
-        <td>Scale</td>
-      
     </tr>
   
     <tr>
+      
+        <td>RunningTime</td>
+      
+        <td>Scale</td>
       
         <td>Section</td>
       
         <td>Series</td>
       
-        <td>SeriesNumber</td>
-      
-        <td>SeriesText</td>
-      
     </tr>
   
     <tr>
+      
+        <td>SeriesNumber</td>
+      
+        <td>SeriesText</td>
       
         <td>SeriesTitle</td>
       
         <td>Session</td>
       
-        <td>SessionType**</td>
-      
-        <td>ShortTitle</td>
-      
     </tr>
   
     <tr>
+      
+        <td>SessionType**</td>
+      
+        <td>ShortTitle</td>
       
         <td>SigningDate**</td>
       
         <td>Status**</td>
       
-        <td>Studio</td>
-      
-        <td>Subject</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Studio</td>
+      
+        <td>Subject</td>
       
         <td>SupplementName**</td>
       
         <td>System</td>
       
-        <td>ThesisType</td>
-      
-        <td>Title</td>
-      
     </tr>
   
     <tr>
+      
+        <td>ThesisType</td>
+      
+        <td>Title</td>
       
         <td>TreatyNumber**</td>
       
         <td>Type</td>
       
-        <td>University</td>
-      
-        <td>Url</td>
-      
     </tr>
   
     <tr>
+      
+        <td>University</td>
+      
+        <td>Url</td>
       
         <td>VersionNumber</td>
       
         <td>VideoRecordingFormat</td>
       
-        <td>Volume</td>
-      
-        <td>VolumeTitle**</td>
-      
     </tr>
   
     <tr>
+      
+        <td>Volume</td>
+      
+        <td>VolumeTitle**</td>
       
         <td>WebsiteTitle</td>
       
         <td>WebsiteType</td>
       
+    </tr>
+  
+    <tr>
+      
         <td>YearAsVolume**</td>
+      
+        <td></td>
+      
+        <td></td>
       
         <td></td>
       
@@ -2097,7 +2118,7 @@ table above, which give you the values from Zotero without any changes. The fiel
 </footer>
 
         
-        </div> 
+        </div>
         
 
       </div>
@@ -2105,8 +2126,8 @@ table above, which give you the values from Zotero without any changes. The fiel
     <div id="navigation">
         
         
+
         
-        
             
             
                 
@@ -2139,105 +2160,6 @@ table above, which give you the values from Zotero without any changes. The fiel
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
                     
                         
             
@@ -2315,87 +2237,6 @@ table above, which give you the values from Zotero without any changes. The fiel
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -2496,12 +2337,192 @@ table above, which give you the values from Zotero without any changes. The fiel
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
             
         
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
         
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
         
 
 
@@ -2517,7 +2538,7 @@ table above, which give you the values from Zotero without any changes. The fiel
     </div>
 
     </section>
-    
+
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
@@ -2531,12 +2552,14 @@ table above, which give you the values from Zotero without any changes. The fiel
     <script src="/zotero-better-bibtex/js/modernizr.custom-3.6.0.js"></script>
     <script src="/zotero-better-bibtex/js/learn.js"></script>
     <script src="/zotero-better-bibtex/js/hugo-learn.js"></script>
-
-    <link href="/zotero-better-bibtex/mermaid/mermaid.css" rel="stylesheet" />
-    <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true });
-    </script>
+    
+        
+            <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
     
 
   </body>

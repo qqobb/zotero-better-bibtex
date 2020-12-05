@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.79.0" />
     <meta name="description" content="Make Zotero more useful for us LaTeX holdouts">
 <meta name="author" content="Emiliano Heyns">
 
@@ -688,6 +688,15 @@ Better BibTeX for Zotero
 
     
   </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
 
     <div class="highlightable">
     <ul class="topics">
@@ -702,7 +711,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/" title="Installation" class="dd-item
         parent
         
         
@@ -719,7 +728,7 @@ Better BibTeX for Zotero
             
           
           
-          
+
         
           
             
@@ -731,7 +740,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/installation/preferences/" title="Configuration" class="dd-item
         parent
         
         
@@ -746,7 +755,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -835,7 +844,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -865,7 +874,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -879,7 +888,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/exporting/" title="Exporting items" class="dd-item
         
         
         
@@ -894,7 +903,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1046,7 +1055,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1060,7 +1069,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/citing/" title="Citation Keys" class="dd-item
         
         
         
@@ -1075,7 +1084,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1122,7 +1131,7 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
@@ -1136,7 +1145,7 @@ Better BibTeX for Zotero
  
   
     
-    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item 
+    <li data-nav-id="/zotero-better-bibtex/support/" title="Support" class="dd-item
         
         
         
@@ -1151,7 +1160,7 @@ Better BibTeX for Zotero
           
           
           
-          
+
         
           
             
@@ -1240,13 +1249,13 @@ Better BibTeX for Zotero
           
         
         </ul>
-              
+      
     </li>
   
  
 
           
-         
+        
     </ul>
 
     
@@ -1255,15 +1264,15 @@ Better BibTeX for Zotero
         <h3>More</h3>
         <ul>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex/releases/latest"><i class='fas fa-fw fa-download'></i> Download</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="/zotero-better-bibtex/sponsoring"><i class='fas fa-fw fa-heart'></i> Sponsorship</a>
               </li>
           
-              <li> 
+              <li>
                   <a class="padding" href="https://github.com/retorquere/zotero-better-bibtex"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
               </li>
           
@@ -1487,6 +1496,7 @@ Better BibTeX for Zotero
         <li><a href="#relativefilepaths">relativeFilePaths</a></li>
         <li><a href="#skipwords">skipWords</a></li>
         <li><a href="#verbatimfields">verbatimFields</a></li>
+        <li><a href="#warntitlecased">warnTitleCased</a></li>
       </ul>
     </li>
   </ul>
@@ -1541,7 +1551,7 @@ setting off an unreasonable number of auto-exports. Minimum is 1 second. Changes
 <p>Number of seconds to wait after your system goes idle before kicking off auto-exports.</p>
 <h3 id="autopindelay">autoPinDelay</h3>
 <p>default: <code>0</code></p>
-<p>When &gt; 0, BBT will automatically pin the first citekey it generates for an item this many seconds.</p>
+<p>When &gt; 0, BBT will automatically pin the first citekey it generates for an item after this many seconds.</p>
 <h3 id="biblatexextendeddateformat">biblatexExtendedDateFormat</h3>
 <p>default: <code>yes</code></p>
 <p>Support for EDTF dates in biblatex</p>
@@ -1620,8 +1630,13 @@ to those attachments. Caching is disabled when this option is on, so it affects 
 <p>default: <code>a,ab,aboard,about,above,across,after,against,al,along,amid,among,an,and,anti,around,as,at,before,behind,below,beneath,beside,besides,between,beyond,but,by,d,da,das,de,del,dell,dello,dei,degli,della,dell,delle,dem,den,der,des,despite,die,do,down,du,during,ein,eine,einem,einen,einer,eines,el,en,et,except,for,from,gli,i,il,in,inside,into,is,l,la,las,le,les,like,lo,los,near,nor,of,off,on,onto,or,over,past,per,plus,round,save,since,so,some,sur,than,the,through,to,toward,towards,un,una,unas,under,underneath,une,unlike,uno,unos,until,up,upon,versus,via,von,while,with,within,without,yet,zu,zum</code></p>
 <p>list of words to skip in title when generating citation keys</p>
 <h3 id="verbatimfields">verbatimFields</h3>
-<p>default: <code>url,doi,file,eprint,verba,verbb,verbc</code></p>
+<p>default: <code>url,doi,file,eprint,verba,verbb,verbc,groups</code></p>
 <p>list of fields to treat as verbatim during import. If you&rsquo;re importing e.g. Mendeley-generated BibTeX, try removing <code>file</code> from this list before import.</p>
+<h3 id="warntitlecased">warnTitleCased</h3>
+<p>default: <code>no</code></p>
+<p>Both Zotero and BBT expect titles to be in sentence-case, but a lot of sites offer import data that is Title Cased. When exporting these titles to bib(la)tex you&rsquo;re going
+to get a lot of extra unwanted braces, because all these Title Cased words will look like proper nouns to BBTs own title-casing mechanism. When this setting is on, you will be warned
+when you import/save items in Zotero with titles that look like they&rsquo;re Title Cased, so that you can inspect/correct them.</p>
 
 
 <footer class="footline">
@@ -1629,7 +1644,7 @@ to those attachments. Caching is disabled when this option is on, so it affects 
 </footer>
 
         
-        </div> 
+        </div>
         
 
       </div>
@@ -1637,8 +1652,8 @@ to those attachments. Caching is disabled when this option is on, so it affects 
     <div id="navigation">
         
         
+
         
-        
             
             
                 
@@ -1691,22 +1706,6 @@ to those attachments. Caching is disabled when this option is on, so it affects 
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1740,6 +1739,22 @@ to those attachments. Caching is disabled when this option is on, so it affects 
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1789,22 +1804,6 @@ to those attachments. Caching is disabled when this option is on, so it affects 
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1902,38 +1901,6 @@ to those attachments. Caching is disabled when this option is on, so it affects 
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -1998,6 +1965,54 @@ to those attachments. Caching is disabled when this option is on, so it affects 
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -2035,7 +2050,7 @@ to those attachments. Caching is disabled when this option is on, so it affects 
                     
             
         
-        
+
         
 
 
@@ -2051,7 +2066,7 @@ to those attachments. Caching is disabled when this option is on, so it affects 
     </div>
 
     </section>
-    
+
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
@@ -2065,12 +2080,14 @@ to those attachments. Caching is disabled when this option is on, so it affects 
     <script src="/zotero-better-bibtex/js/modernizr.custom-3.6.0.js"></script>
     <script src="/zotero-better-bibtex/js/learn.js"></script>
     <script src="/zotero-better-bibtex/js/hugo-learn.js"></script>
-
-    <link href="/zotero-better-bibtex/mermaid/mermaid.css" rel="stylesheet" />
-    <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true });
-    </script>
+    
+        
+            <script src="/zotero-better-bibtex/mermaid/mermaid.js"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
     
 
   </body>
